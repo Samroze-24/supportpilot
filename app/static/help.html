@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Help Center — SupportPilot</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header class="nav"><div class="container">
+  <div class="logo">Support<span>Pilot</span></div>
+  <nav class="nav-links"><a href="/">Home</a><a href="/app">Log in</a></nav>
+</div></div></header>
+<section class="section container">
+  <h2>Help Center</h2>
+  <p class="sub">Answers to common questions. Pick a workspace below to load its published articles.</p>
+  <div class="panel">
+    <label>Workspace ID</label>
+    <input id="wsId" type="number" value="1" style="max-width:200px">
+    <button class="btn btn-primary btn-sm" style="margin-top:10px" onclick="loadKb()">Load articles</button>
+  </div>
+  <div id="articles"></div>
+</section>
+<script>
+async function loadKb() {
+  const id = document.getElementById('wsId').value;
+  const res = await fetch('/public/kb?workspace_id=' + id);
+  const data = await res.json();
+  const box = document.getElementById('articles');
+  if (!data.articles || !data.articles.length) { box.innerHTML = '<p style="color:#6b7280">No published articles for this workspace.</p>'; return; }
+  box.innerHTML = data.articles.map(a =>
+    `<div class="panel"><h2>${a.title}</h2><p style="color:#6b7280;font-size:13px">${a.category}</p><p>${a.body}</p></div>`).join('');
+}
+loadKb();
+</script>
+</body>
+</html>

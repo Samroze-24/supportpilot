@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SupportPilot — Dashboard</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div id="authView" class="login-wrap">
+  <h1>SupportPilot</h1>
+  <p>Log in to your workspace, or create a new store workspace.</p>
+  <div id="authMsg"></div>
+  <label>Email</label><input id="email" type="email" placeholder="you@yourstore.com">
+  <label>Password</label><input id="password" type="password" placeholder="••••••••">
+  <div id="signupFields" class="hidden">
+    <label>Your name</label><input id="name" type="text" placeholder="Alex Morgan">
+    <label>Store / workspace name</label><input id="wsName" type="text" placeholder="My Store">
+  </div>
+  <div style="display:flex;gap:10px;margin-top:18px">
+    <button class="btn btn-primary" style="flex:1" onclick="login()">Log in</button>
+    <button class="btn btn-ghost" style="flex:1" onclick="toggleSignup()" id="signupBtn">Sign up</button>
+  </div>
+  <div class="demo-box"><b>Demo workspace — Northwind Store</b><br>
+  Owner: owner@northwind.store / owner123<br>
+  Agent: sara@northwind.store / agent123<br>
+  (Run <code>python -m app.seed</code> first to create it.)</div>
+  <p style="margin-top:14px;font-size:13px"><a href="/">← Back to website</a></p>
+</div>
+
+<div id="appView" class="hidden">
+  <div class="topbar">
+    <div class="logo">Support<span>Pilot</span></div>
+    <div><span id="whoami" style="margin-right:12px;font-size:13px"></span><button onclick="logout()">Log out</button></div>
+  </div>
+  <div class="layout">
+    <div class="sidebar">
+      <button class="active" onclick="show('inbox',this)">📥 Inbox</button>
+      <button onclick="show('new',this)">✉️ New ticket</button>
+      <button onclick="show('kb',this)">📚 Knowledge base</button>
+      <button onclick="show('billing',this)">💳 Billing &amp; plan</button>
+      <button onclick="show('analytics',this)">📊 Analytics</button>
+    </div>
+    <div class="main">
+      <div id="msg"></div>
+
+      <section id="sec-inbox">
+        <div class="toolbar">
+          <select id="fStatus" onchange="loadTickets()"><option value="">All statuses</option><option>open</option><option>pending</option><option>resolved</option></select>
+          <select id="fChannel" onchange="loadTickets()"><option value="">All channels</option><option>email</option><option>chat</option><option>whatsapp</option></select>
+          <input id="fSearch" placeholder="Search tickets..." oninput="loadTickets()" style="flex:1">
+        </div>
+        <div class="panel"><div id="ticketList"></div></div>
+        <div class="panel hidden" id="ticketDetail"></div>
+      </section>
+
+      <section id="sec-new" class="hidden">
+        <div class="panel"><h2>New ticket</h2>
+          <label>Subject</label><input id="ntSubject" placeholder="Where is my order?">
+          <label style="display:block;margin-top:10px">Message</label><textarea id="ntBody" rows="4" placeholder="Customer message..."></textarea>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+            <div><label>Customer name</label><input id="ntName" placeholder="Emma Wilson"></div>
+            <div><label>Customer email</label><input id="ntEmail" placeholder="emma@example.com"></div>
+            <div><label>Country</label><input id="ntCountry" placeholder="United States"></div>
+            <div><label>Channel</label><select id="ntChannel"><option>email</option><option>chat</option><option>whatsapp</option></select></div>
+          </div>
+          <button class="btn btn-primary" style="margin-top:14px" onclick="createTicket()">Create ticket (AI triage runs automatically)</button>
+        </div>
+      </section>
+
+      <section id="sec-kb" class="hidden">
+        <div class="panel"><h2>New KB article</h2>
+          <label>Title</label><input id="kbTitle">
+          <label style="display:block;margin-top:10px">Body</label><textarea id="kbBody" rows="4"></textarea>
+          <label style="display:block;margin-top:10px">Category</label><input id="kbCat" value="General">
+          <button class="btn btn-primary" style="margin-top:12px" onclick="createKb()">Publish article</button>
+        </div>
+        <div class="panel"><h2>Articles</h2><div id="kbList"></div></div>
+      </section>
+
+      <section id="sec-billing" class="hidden">
+        <div class="panel"><h2>Billing &amp; plan <span class="badge b-pending">MOCK — no real payment</span></h2><div id="billingBox"></div></div>
+        <div class="panel"><h2>Upgrade (mock checkout)</h2>
+          <p style="color:#6b7280;font-size:14px;margin-bottom:12px">This is a simulated checkout. No real money is charged and no real Stripe call is made.</p>
+          <button class="btn btn-primary" onclick="checkout('pro')">Upgrade to Pro — $19/mo (mock)</button>
+          <button class="btn btn-ghost" onclick="checkout('business')" style="margin-left:8px">Upgrade to Business — $49/mo (mock)</button>
+        </div>
+      </section>
+
+      <section id="sec-analytics" class="hidden">
+        <div class="panel"><h2>Analytics</h2><div id="analyticsBox"></div></div>
+      </section>
+    </div>
+  </div>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+text,intent
+"Hi, where is my order #ORD-4821? It was placed 5 days ago and I have not received any update.",order_status
+"Can you check the status of order #ORD-5190 please? The tracking page has not moved since Monday.",order_status
+"My order #ORD-4477 still shows as processing. When will it be shipped?",order_status
+"I need an update on order #ORD-5302, it should have arrived yesterday.",order_status
+"Hello, could you tell me where my package is? Order #ORD-4988.",order_status
+"Order #ORD-5113 has been stuck at the warehouse for 3 days. Please check.",order_status
+"Has my order #ORD-4602 been dispatched yet? I need it by Friday.",order_status
+"Please give me the delivery status for order #ORD-5277.",order_status
+"I ordered a jacket last week, order #ORD-4930, but the status still says pending.",order_status
+"Where is my parcel? Order #ORD-5054, tracking shows no movement.",order_status
+"Hi team, order #ORD-4715 was supposed to arrive today. Any update?",order_status
+"Can someone confirm if order #ORD-5361 has left your facility?",order_status
+"My order #ORD-4889 is delayed. What is the new expected delivery date?",order_status
+"Tracking for order #ORD-5204 says delivered but I never received it.",order_status
+"Order #ORD-4550 shows out for delivery since yesterday morning. Please help.",order_status
+"I would like to know the current status of my order #ORD-5142.",order_status
+"Hi, my order #ORD-4796 has not arrived and there is no tracking update.",order_status
+"Please check order #ORD-5018. It has been 6 days since I placed it.",order_status
+"Is order #ORD-5420 on its way? I have not received a shipping confirmation.",order_status
+"Order #ORD-4663 status please, it is urgent, it is a gift for Saturday.",order_status
+"Do you ship to Canada? What are the delivery times to Toronto?",shipping
+"How much does shipping to the UK cost for an order under 2kg?",shipping
+"Do you offer express shipping to the UAE? I need delivery within 3 days.",shipping
+"What are your shipping options to Australia? Is there free shipping over a certain amount?",shipping
+"Hi, do you deliver to Germany? What is the estimated delivery time?",shipping
+"Can I change the delivery address for my order? It has not shipped yet.",shipping
+"Is international shipping available to India? What are the charges?",shipping
+"Do you ship to the US? How long does standard delivery take to New York?",shipping
+"What is the shipping cost to France for two items?",shipping
+"Can I choose a specific delivery date for my order?",shipping
+"Do you deliver on weekends? My parcel is expected on Saturday.",shipping
+"Is there a way to get same-day delivery in London?",shipping
+"How do I track my shipment once it leaves your warehouse?",shipping
+"What courier do you use for international deliveries?",shipping
+"My address is in a remote area in Scotland, will delivery take longer?",shipping
+"Do you ship to PO boxes in the United States?",shipping
+"Can I pick up my order from your store instead of home delivery?",shipping
+"What happens if I am not home when the delivery arrives?",shipping
+"Do you offer free shipping for orders over $100 to Europe?",shipping
+"How long does delivery take to Dubai after dispatch?",shipping
+"I would like a refund for order #ORD-4733. The item arrived damaged.",refund
+"Please refund my money. I returned the shoes last week and have not heard back.",refund
+"Hi, I want to return the headphones I bought and get a refund to my card.",refund
+"Can I get a refund for order #ORD-5089? The size was wrong and I already returned it.",refund
+"I cancelled my order #ORD-4955 before shipping, but I was still charged. Please refund.",refund
+"Requesting a refund for the defective charger in order #ORD-5210.",refund
+"How long does a refund take once the return is received?",refund
+"I returned my order 10 days ago and still no refund. Please check order #ORD-4618.",refund
+"Please process a refund for the duplicate charge on my credit card.",refund
+"The item I received is not what I ordered. I want a full refund for order #ORD-4842.",refund
+"Hi, my refund for order #ORD-5176 was promised last week but nothing has arrived.",refund
+"I would like to cancel and get a refund for order #ORD-4999, it was a mistake order.",refund
+"Can you refund the difference? I bought it at full price and it went on sale the next day.",refund
+"Refund request: order #ORD-5031, the dress has a stain and I do not want a replacement.",refund
+"My bank shows the payment was taken twice for order #ORD-4907. Please refund one charge.",refund
+"I need a refund for my subscription renewal, I cancelled before the renewal date.",refund
+"Please refund order #ORD-5265. The product was faulty on arrival.",refund
+"How do I start a return and refund? The package arrived with a broken item.",refund
+"I was charged for an order I never placed. Please refund the full amount immediately.",refund
+"Refund status for order #ORD-4788 please, it has been two weeks.",refund
+"I am very unhappy with the quality of the product. The stitching is coming apart after one wash.",complaint
+"This is the third time my order arrived late. Your service is getting worse.",complaint
+"I received a used item instead of a new one. This is unacceptable.",complaint
+"Your website promised delivery in 2 days and it took 9 days. Very disappointing.",complaint
+"The customer service agent was rude to me on the phone yesterday.",complaint
+"I am complaining about the damaged packaging. The box was crushed when it arrived.",complaint
+"The product does not match the photos on your website at all. Misleading advertising.",complaint
+"I have been waiting 45 minutes on hold. This is terrible customer service.",complaint
+"The item smells strongly of chemicals and gave me a headache. I want this investigated.",complaint
+"My order arrived with missing parts. The manual says there should be 4 pieces, only 3 were in the box.",complaint
+"I am furious. You charged my card after I cancelled my subscription.",complaint
+"The shoes I received are a different color than what I ordered. Very poor quality control.",complaint
+"I want to file a formal complaint about the delivery driver who left my parcel in the rain.",complaint
+"This is my second complaint about the same issue and nobody has resolved it.",complaint
+"Your app keeps crashing when I try to place an order. Fix it please.",complaint
+"I received someone else's order. This is a serious privacy issue.",complaint
+"The discount code you emailed me does not work at checkout. False advertising.",complaint
+"I am disappointed. The gift I ordered arrived after the birthday.",complaint
+"The product broke after two days of normal use. This is not acceptable quality.",complaint
+"Your packaging uses far too much plastic. I am complaining about the environmental waste.",complaint
+"I cannot log in to my account. It says my password is incorrect but I just reset it.",account
+"How do I change the email address linked to my account?",account
+"I forgot my password and the reset link is not arriving in my inbox.",account
+"Please delete my account and all my personal data.",account
+"How do I update my phone number on my account?",account
+"My account was locked after too many login attempts. Can you unlock it?",account
+"I want to change my account name after getting married. How do I do that?",account
+"Can I merge two accounts into one? I accidentally created a second account.",account
+"How do I close my account permanently?",account
+"The verification code for my account is not working.",account
+"I cannot access my order history. My account page shows nothing.",account
+"Please update the billing address on my account to my new home address.",account
+"How do I change my subscription plan from monthly to yearly?",account
+"My account shows an old address. Where do I edit my saved addresses?",account
+"I signed up with the wrong email. Can you change it for me?",account
+"How do I enable two-factor authentication on my account?",account
+"My loyalty points disappeared from my account after the website update.",account
+"Can you confirm which email my account is registered under?",account
+"I want to download all my account data. How do I request it?",account
+"How do I unsubscribe from marketing emails but keep my account?",account
+"Is this jacket waterproof? I need it for rainy weather in London.",product_question
+"What is the material of this dress? Is it 100 percent cotton?",product_question
+"Does the laptop stand fit a 16 inch MacBook Pro?",product_question
+"What is the warranty period for the wireless earbuds?",product_question
+"Are these shoes true to size? I usually wear a UK 8.",product_question
+"Does this blender work with 220V power supply for use in Europe?",product_question
+"What colors does this bag come in? The website only shows black.",product_question
+"Is this skincare product suitable for sensitive skin?",product_question
+"How many watts is the charger included with the phone?",product_question
+"Can this table be assembled without tools?",product_question
+"What is the weight limit of this office chair?",product_question
+"Does the camera come with a memory card included in the box?",product_question
+"Is this toy safe for children under 3 years old?",product_question
+"What is the difference between the standard and pro versions of this watch?",product_question
+"Does this shirt need to be dry cleaned or can I wash it at home?",product_question
+"Are the ingredients of this protein powder vegan friendly?",product_question
+"How long does the battery last on the wireless speaker at full volume?",product_question
+"Is this backpack waterproof and does it have a laptop sleeve?",product_question
+"What size should I order if I am between medium and large?",product_question
+"Does this monitor support 4K resolution at 60Hz?",product_question
+"Hello, just wanted to say thank you, the order arrived in perfect condition!",other
+"Hi there, I love your store! Do you have a loyalty program?",other
+"Good morning, what are your opening hours on Sundays?",other
+"Just checking in, do you have any Black Friday deals coming up?",other
+"Hi, I am a student. Do you offer a student discount?",other
+"Hello, can I get a catalogue of your new collection by email?",other
+"Hey, do you have a physical store in Manchester I can visit?",other
+"Hi, I am writing a review, the service was excellent. Keep it up!",other
+"Good afternoon, do you sell gift cards? I want one for my sister.",other
+"Hello, I would like to partner with your store as a supplier. Who should I contact?",other
+"Hi, do you offer bulk discounts for orders of 50 items or more?",other
+"Just wanted to ask if you will restock the blue hoodie in size large.",other
+"Hello, what payment methods do you accept? Do you take Apple Pay?",other
+"Hi there, do you have an affiliate program for content creators?",other
+"Good evening, I am looking for a store near me, where are you located?",other
+"Hey, I saw your ad on Instagram. Is the 20 percent off still valid?",other
+"Hello, can I pay with cash on delivery for my order?",other
+"Hi, do you have a newsletter I can subscribe to for new arrivals?",other
+"Good morning, I lost my invoice. Can you send me a copy by email?",other
+"Hi, I am a journalist writing about your brand. Who handles press enquiries?",other
